@@ -7,15 +7,15 @@
 html {
  
 }
-    body {
+body {
     background-color:  rgb(253, 234, 229);
     font-family: monospace;
-    }
+}
    
     /* ENCABEZADO */
     .contenedorlista {
       width: auto;
-      background-color: rgba(194, 143, 151, 0.856);
+      background-color: pink;
     }
    
     ul  {
@@ -24,8 +24,8 @@ html {
       justify-content: space-between;
       list-style-type: none;}
    
-    /* PORTADA */
-    .fotoportada {
+ /* PORTADA */
+ .fotoportada {
         color: black;
         display: flex;
         justify-content: center;
