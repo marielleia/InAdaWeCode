@@ -15,7 +15,7 @@ html {
     /* ENCABEZADO */
     .contenedorlista {
       width: auto;
-      background-color: pink;
+      background-color: rgba(194, 143, 151, 0.856);
     }
    
     ul  {
