@@ -8,7 +8,7 @@ html {
  
 }
     body {
-    background-color: rgb(194, 143, 151, 0.856);
+    background-color:  rgb(253, 234, 229);
     font-family: monospace;
     }
    
@@ -26,12 +26,25 @@ html {
    
     /* PORTADA */
     .fotoportada {
-        background-color: aqua;
+        color: black;
+        display: flex;
+        justify-content: center;
+        position: relative;
     }
-    .text1 {
-    display: flex;
+    .text1, .text2 {
+        display: flex;
+        justify-content: center;
     }
-    .text2 {
+    h1 {
+        font-size: 60px;
+    }
+        
+    h3 {
+        font-size: 20px;
+    }
+        
+    #fondo {
+        width: 100%;
     }
    
     /* MISION */
@@ -68,3 +81,10 @@ html {
         }
         .Marielle {
         }
+footer {
+    background-color: blueviolet;
+}
+
+.trabaja {
+    background-color: yellow;
+}
