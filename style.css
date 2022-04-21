@@ -1,62 +1,64 @@
 /*RESET CSS*/
-
+ 
 * {
-    margin: 0;  
+    margin: 0;
     }
-    
+ 
+html {
+ 
+}
     body {
-     background-color: whitesmoke;
-     /*font-family*/
+    background-color: rgb(194, 143, 151, 0.856);
+    font-family: monospace;
     }
-    
+   
     /* ENCABEZADO */
     .contenedorlista {
       width: auto;
       background-color: pink;
     }
-    
+   
     ul  {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       list-style-type: none;}
-    
+   
     /* PORTADA */
     .fotoportada {
         background-color: aqua;
     }
     .text1 {
-    display: flex:
-      ;
+    display: flex;
     }
     .text2 {
     }
-    
+   
     /* MISION */
-    
+   
     .Mision {
         background-color: purple;
     }
         .mvv {
         }
-    
+   
     /*HISTORIA*/
     .Historia {
         background-color: green;
     }
-    
+   
     /*IDEA*/
     .Idea {
         background-color: blue;}
-    
-    
+   
+   
     /*PROYECTOS*/
     .Proyectos {
         background-color: orange;}
         .Proyecto1 {
         }
-    
-    
+   
+   
     /*MIEMBROS*/
     .Miembros {
         background-color: fuchsia;}
