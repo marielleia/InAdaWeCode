@@ -53,6 +53,25 @@ ul {
         background-color: purple;
     }
    
+    .ima {
+        
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 20px;
+        position: relative;
+
+    }
+
+ .ul{
+     justify content:center ;
+     flex direction:center;
+     list-style-type:
+
+
+    
+
+   }
 /************************SECCION 2: HISTORIA********************/
 .Historia {
         background-color: green;
