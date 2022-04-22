@@ -1,30 +1,31 @@
-/*RESET CSS*/
+/********************RESET CSS********************************/
  
 * {
     margin: 0;
     }
  
 html {
- 
+ background-color: blueviolet;
 }
 body {
     background-color:  rgb(253, 234, 229);
     font-family: monospace;
 }
    
-    /* ENCABEZADO */
-    .contenedorlista {
-      width: auto;
-      background-color: pink;
-    }
+/******************* ENCABEZADO *****************************/
+.contenedorlista {
+    width: auto;
+    background-color: yellow;
+}
    
-    ul  {
+ul {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      list-style-type: none;}
+      list-style-type: none;
+}
    
- /* PORTADA */
+ /************************** PORTADA ************************/
  .fotoportada {
         color: black;
         display: flex;
@@ -47,40 +48,45 @@ body {
         width: 100%;
     }
    
-    /* MISION */
-   
-    .Mision {
+/***********************SECCION 1: MISION **********************/
+.Mision {
         background-color: purple;
     }
-        .mvv {
-        }
    
-    /*HISTORIA*/
-    .Historia {
+/************************SECCION 2: HISTORIA********************/
+.Historia {
         background-color: green;
     }
    
-    /*IDEA*/
-    .Idea {
-        background-color: blue;}
-   
-   
-    /*PROYECTOS*/
-    .Proyectos {
-        background-color: orange;}
+/**********************SECCION 3: PROYECTOS*********************/
+.Proyectos {
+        background-color: orange;
+    }
         .Proyecto1 {
+            background-color: blue;
+        }
+        .Proyecto2 {
+            background-color: blue;
+        }
+        
+        .Proyecto3 {
+            background-color: blue;
         }
    
-   
-    /*MIEMBROS*/
-    .Miembros {
+/*******************SECCION 4: MIEMBROS*************************/
+.Miembros {
         background-color: fuchsia;}
         .Maria {
+            background-color: green;
         }
         .Laura {
+            background-color: yellow;
         }
         .Marielle {
+            background-color: fuchsia;
         }
+
+/*****************FOOTER: TRABAJA CON NOSOTRAS*******************/
 footer {
     background-color: blueviolet;
 }
