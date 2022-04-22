@@ -9,15 +9,13 @@ html {
 }
 body {
     background-color:  rgb(253, 234, 229);
-    font-family: monospace;
+    font-family: 'Inconsolata', monospace;
 }
    
 /******************* ENCABEZADO *****************************/
 .contenedorlista {
     width: auto;
     color: #5E2BFF;
-    
-    
     
 }
    
@@ -31,21 +29,22 @@ ul {
  /************************** PORTADA ************************/
  .fotoportada {
         color: black;
-        display: flex;
-        justify-content: center;
-        position: relative;
+
     }
     .text1, .text2 {
         display: flex;
         justify-content: center;
+        
     }
-    h1 {
+    .text1 h1 {
         font-size: 60px;
         color: #ED5945;
+        font-family: 'Playfair Display', serif;
     }
         
-    h3 {
+    .text2 h3 {
         font-size: 20px;
+        font-family: 'Roboto Mono', monospace;
     }
         
     #fondo {
@@ -67,31 +66,53 @@ ul {
    
 /**********************SECCION 3: PROYECTOS*********************/
 .Proyectos {
-        background-color: orange;
-    }
-        .Proyecto1 {
-            background-color: blue;
-        }
-        .Proyecto2 {
-            background-color: blue;
-        }
-        
-        .Proyecto3 {
-            background-color: blue;
-        }
+}
+.grid-container-proyectos {
+    display: grid;
+    justify-content: space-around;
+    border: black solid 1px;
+}
+.grid-item-Proyecto1 {
+}
+.grid-item-Proyecto2 {
+}
+.grid-item-Proyecto3 {
+
+}
    
 /*******************SECCION 4: MIEMBROS*************************/
+
 .Miembros {
-        background-color: fuchsia;}
-        .Maria {
-            background-color: green;
-        }
-        .Laura {
-            background-color: yellow;
-        }
-        .Marielle {
-            background-color: fuchsia;
-        }
+    background-color: #ED5945;
+}
+
+.grid-container-miembros {
+    display: grid;
+    justify-content: space-around;
+    column-gap: 10px;
+    border: black solid 2px;
+}
+
+    .grid-item-maria1 {
+        grid-column-start: 1;
+        background-color: yellow;
+        padding: 10px;
+        border: 5px solid whitesmoke;
+    }
+
+    .grid-item-laura2 {
+        grid-column-start: 2;
+        background-color: green;
+        padding: 10px;
+        border: 5px solid  whitesmoke;
+    }
+
+    .grid-item-marielle3 {
+        grid-column-start: 3;
+        background-color: blue;
+        padding: 10px;
+        border: 5px solid  whitesmoke;
+    }
 
 /*****************FOOTER: TRABAJA CON NOSOTRAS*******************/
 footer {

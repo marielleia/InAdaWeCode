@@ -6,18 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Sobre nosotras</title>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Playfair+Display&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
   </head>
+
+
+  
  
 <body>
 <!---------------------------------ENCABEZADO-------------------------------------------->
     <nav>
+        <section class = "logo">
+            <img scr="Foto" alt="logo">
+        </section>
         <section class="contenedorlista">                
             <ul>
-                <li>Misión Visión Valores</li>                                
-                <li>Historia</li>
-                <li>Proyectos</li>
-                <li>Miembros</li>
-                <li>Trabaja con nosotras</li>
+                <li><a href="link">In Ada We Code</a></li>                                
+                <li><a href="link">Historia</a></li>
+                <li><a href="link">Proyectos</a></li>
+                <li><a href="link">Miembros</a></li>
+                <li><a href="link">Trabaja con nosotras</a></li>
             </ul>
         </section>  
     </nav>
@@ -25,12 +32,10 @@
 <!----------------------------------------PORTADA---------------------------------------->
 <main>
     <section class="fotoportada">
-        <div class="pantallaprincipal">
             <div class="text1"><h1>IN ADA WE &lt; CODE &gt; </h1></div>
             <div class="text2"><h3><em>"we make your dreams happen"
             </a></em></h3></div>
             <img id="fondo" src="https://cdn.pixabay.com/photo/2021/08/17/14/48/sea-6553205_960_720.jpg" alt="Fondo">
-        </div>
     </section>
 </main>
 
@@ -58,27 +63,40 @@
 <!-----------------------------------SECCION 3: PROYECTOS------------------------------------->
 <section class="Proyectos">
     <h2>NUESTROS PROYECTOS</h2>
-    <div class="Proyecto1">
+    <div class="grid-container-proyectos"></div>
+    <div class="grid-item-Proyecto1">
         <h3>Proyecto 1: Google Log In</h3>
+        <img src="Foto" alt="ProyectoGoogle">
     </div>
-    <div class="Proyecto2">
+    <div class="grid-item-Proyecto2">
         <h3>Proyecto 2: Spotify Landing Page</h3>
+        <img src="Foto" alt="ProyectoSpotify">
     </div>
-    <div class="Proyecto3">
+    <div class="grid-item-Proyecto3">
         <h3>Proyecto 3: Tribute to Ada Lovelace</h3>
+        <img src="Foto" alt="ProyectoTribute">
     </div>
 </section>
 
 <!-----------------------------------SECCION 4: MIEMBROS------------------------------------->
 <section class="Miembros">
+
     <h2>LAS PARTICIPANTES DEL GRUPO</h2>
-    <div class="Maria">
-        <h3>Maria</h3>
+    <div class="grid-container-miembros">
+        <div class="grid-item-maria1">
+            <img src="Foto" alt="FotoMaria">
+            <h3>Maria Carranza</h3><br>
+            <p>Descripción</p></div>
+        <div class="grid-item-laura2">
+            <img src="Foto" alt="FotoLaura">
+            <h3>Laura Calderin</h3><br>
+            <p>Descripción</p></div>
+        <div class="grid-item-marielle3">
+            <img src="Foto" alt="FotoMarielle">
+            <h3>Marielle Ibias</h3><br>
+            <p>Descripción</p></div>
     </div>
-    <div class="Laura">
-        <h3>Laura</h3></div>
-    <div class="Marielle">
-        <h3>Marielle</h3></div>
+
 </section>
 
 <!-----------------------------------FOOTER: CONTACTA/TRABAJA------------------------------------>
