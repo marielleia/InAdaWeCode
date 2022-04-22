@@ -6,17 +6,27 @@
  
 html {
  background-color: blueviolet;
+ scroll-behavior: smooth;
 }
+
+  
+  #otherElement {
+    padding-top: 500px;
+    width: 100%;
+  }
+
 body {
     background-color:  rgb(253, 234, 229);
     font-family: 'Inconsolata', monospace;
+    display: flex;
+    flex-direction: column;
 }
    
 /******************* ENCABEZADO *****************************/
 .contenedorlista {
     width: auto;
     color: #5E2BFF;
-    
+    position: right fixed;
 }
    
 ul {
@@ -27,29 +37,36 @@ ul {
 }
    
  /************************** PORTADA ************************/
- .fotoportada {
-        color: black;
-
+ .portada {
+        height: auto;
+        width: auto;
+        position: relative;
+        text-align: center;
+        color: white;
     }
-    .text1, .text2 {
-        display: flex;
-        justify-content: center;
-        
+    .maintext {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .text1 h1 {
         font-size: 60px;
-        color: #ED5945;
+        color: rgb(253, 234, 229);
         font-family: 'Playfair Display', serif;
+        text-align: center;
     }
         
     .text2 h3 {
-        font-size: 20px;
+        font-size: 18px;
         font-family: 'Roboto Mono', monospace;
+        color:#ED5945;
     }
         
     #fondo {
         width: 100%;
     }
+
     a:link {
         color: #5E2BFF;
     }

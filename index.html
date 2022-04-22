@@ -7,42 +7,40 @@
     <title>Sobre nosotras</title>
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Playfair+Display&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
-  </head>
-
-
-  
+  </head>  
  
 <body>
 <!---------------------------------ENCABEZADO-------------------------------------------->
     <nav>
-        <section class = "logo">
+        <section class= "logo">
             <img scr="Foto" alt="logo">
         </section>
         <section class="contenedorlista">                
             <ul>
-                <li><a href="link">In Ada We Code</a></li>                                
-                <li><a href="link">Historia</a></li>
-                <li><a href="link">Proyectos</a></li>
-                <li><a href="link">Miembros</a></li>
-                <li><a href="link">Trabaja con nosotras</a></li>
+                <li><a href="#mvv">In Ada We Code</a></li>                                
+                <li><a href="#Historia">Historia</a></li>
+                <li><a href="#Proyectos">Proyectos</a></li>
+                <li><a href="#Miembros">Miembros</a></li>
+                <li><a href="#Trabaja">Trabaja con nosotras</a></li>
             </ul>
-        </section>  
+        </section>
     </nav>
 
 <!----------------------------------------PORTADA---------------------------------------->
 <main>
-    <section class="fotoportada">
-            <div class="text1"><h1>IN ADA WE &lt; CODE &gt; </h1></div>
-            <div class="text2"><h3><em>"we make your dreams happen"
-            </a></em></h3></div>
-            <img id="fondo" src="https://cdn.pixabay.com/photo/2021/08/17/14/48/sea-6553205_960_720.jpg" alt="Fondo">
-    </section>
+    <section class="portada">
+        <img id="fondo" src="https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567_960_720.jpg" alt="Fondo">
+            <div class="maintext">
+                <div class="text1"><h1>IN ADA WE &lt; CODE &gt; </h1></div>
+                <div class="text2"><h3><em>"we make your dreams happen"</em></h3></div>
+            </div>  
+        </section>
 </main>
 
 <!-----------------------------------SECCION 1: MISION------------------------------------->
     <section class="Mision">
-        <div class="mvv">
-            <h2>MISION, VISION Y VALORES</h2>
+        <div id="mvv">
+            <h2>MISIÓN, VISIÓN Y VALORES</h2>
         </div>
         <h3>texto sobre mision aqui</h3>
         <ul>
@@ -55,32 +53,36 @@
  
 <!-----------------------------------SECCION 2: HISTORIA------------------------------------->
 <section class="Historia">
-        <h2>NUESTRA HISTORIA</h2><h3>"welcome to the new code era"</h3>
+    <div id="Historia">
+        <h2>NUESTRA HISTORIA</h2>
+        <h3>"welcome to the new code era"</h3>
         <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
     </div>
 </section>
 
 <!-----------------------------------SECCION 3: PROYECTOS------------------------------------->
 <section class="Proyectos">
+    <div id="Proyectos">
     <h2>NUESTROS PROYECTOS</h2>
-    <div class="grid-container-proyectos"></div>
-    <div class="grid-item-Proyecto1">
-        <h3>Proyecto 1: Google Log In</h3>
-        <img src="Foto" alt="ProyectoGoogle">
+        <div class="grid-container-proyectos"></div>
+        <div class="grid-item-Proyecto1">
+            <h3>Proyecto 1: Google Log In</h3>
+            <img src="Foto" alt="ProyectoGoogle">
+        </div>
+        <div class="grid-item-Proyecto2">
+            <h3>Proyecto 2: Spotify Landing Page</h3>
+            <img src="Foto" alt="ProyectoSpotify">
+        </div>
+        <div class="grid-item-Proyecto3">
+            <h3>Proyecto 3: Tribute to Ada Lovelace</h3>
+            <img src="Foto" alt="ProyectoTribute">
     </div>
-    <div class="grid-item-Proyecto2">
-        <h3>Proyecto 2: Spotify Landing Page</h3>
-        <img src="Foto" alt="ProyectoSpotify">
-    </div>
-    <div class="grid-item-Proyecto3">
-        <h3>Proyecto 3: Tribute to Ada Lovelace</h3>
-        <img src="Foto" alt="ProyectoTribute">
     </div>
 </section>
 
 <!-----------------------------------SECCION 4: MIEMBROS------------------------------------->
 <section class="Miembros">
-
+<div id="Miembros">
     <h2>LAS PARTICIPANTES DEL GRUPO</h2>
     <div class="grid-container-miembros">
         <div class="grid-item-maria1">
@@ -96,14 +98,17 @@
             <h3>Marielle Ibias</h3><br>
             <p>Descripción</p></div>
     </div>
+</div>
 
 </section>
 
 <!-----------------------------------FOOTER: CONTACTA/TRABAJA------------------------------------>
 <footer>
-    <section class="trabaja">
-        <h2>Trabaja con nosotras</h2>
-        <div>"Formulario"</div>
+    <section class="Trabaja">
+        <div id="Trabaja">
+                <h2>TRABAJA CON NOSOTRAS</h2>
+            <div>"Formulario"</div>
+        </div>
     </section>
 </footer>
 </body>
