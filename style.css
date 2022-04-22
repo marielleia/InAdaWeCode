@@ -15,7 +15,10 @@ body {
 /******************* ENCABEZADO *****************************/
 .contenedorlista {
     width: auto;
-    background-color: yellow;
+    color: #5E2BFF;
+    
+    
+    
 }
    
 ul {
@@ -38,6 +41,7 @@ ul {
     }
     h1 {
         font-size: 60px;
+        color: #ED5945;
     }
         
     h3 {
@@ -46,6 +50,9 @@ ul {
         
     #fondo {
         width: 100%;
+    }
+    a:link {
+        color: #5E2BFF;
     }
    
 /***********************SECCION 1: MISION **********************/
