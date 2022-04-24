@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none
     }
  
 html {
@@ -99,6 +100,7 @@ nav {
 
 a:link {
     color: #5E2BFF;
+    
 }
    
 /***********************SECCION 1: MISION **********************/
@@ -109,9 +111,25 @@ a:link {
    
 /************************SECCION 2: HISTORIA********************/
 .Historia {
-        background-color: green;
+    
+float: left;
+display: flex;
+justify-content: center;
+align-items: center;
+
     }
-   
+.Historia, h2, h3{
+    display: flex;
+    justify-content: center;
+    
+}
+    aside {
+    float: right;
+    width: 20%;
+    background-color: #EB4833;
+    padding: 10% 5%;
+    ;
+}
 /**********************SECCION 3: PROYECTOS*********************/
 .Proyectos {
 }
