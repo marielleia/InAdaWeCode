@@ -1,11 +1,9 @@
 /********************RESET CSS********************************/
- 
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    text-decoration: none
-    }
+    text-decoration: none;
+}
  
 html {
  background-color: blueviolet;
@@ -14,39 +12,50 @@ html {
 
 body {
     background-color:  rgb(253, 234, 229);
-    font-family: 'Inconsolata', monospace;
+    padding: 0;
+    font-family: 'Inconsolata', "Playfair Display", monospace;
     display: flex;
     flex-direction: column;
+    font-size: 1em;
+    line-height: 1.5em;
+    padding-top: 80px;
 }
    
 /******************* ENCABEZADO *****************************/
 nav {
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+    background-color: rgb(253, 234, 229);
 }
 
 .logo {
-    /*height: ;
-    width:auto;*/
-    position: fixed left;
+    position: left;
 }
+
 .contenedorlista {
-    position: fixed right;
     width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
     color: #5E2BFF;
     overflow: hidden;
-    padding: 20px 10px;
+    padding: 20px 15px;
 }
 
 .contenedorlista a {
     float: left;
-    text-align: center;
-    padding: 5px;
+    display: block;
     text-decoration: none;
     font-size: 14px;
     line-height: 15px;
     border-radius: 4px;
+    padding: 5px;
 }
 
 .contenedorlista ul {
@@ -59,22 +68,25 @@ nav {
 .contenedorlista a:hover {
     background-color: #ddd;
     color: #ED5945;
-  }
+}
 
  /************************** PORTADA ************************/
-.portada {
+ #Portada {
+    background-color: yellow;
     position: relative;
+    max-width: 100%;
+    max-height: 100vh;
+    margin: 0 auto;
 }
 
-.portada img {
+#Portada img {
     vertical-align: middle;
     width: 100%;
+    max-width: 100%;
     height: 100vh;
-    size: cover;
-    
 }
 
-.portada .maintext {
+#Portada .maintext {
     position: absolute;
     bottom: 0;
     background: rgb(0, 0, 0); /* Fallback color */
@@ -85,7 +97,7 @@ nav {
 }
 
 .text1 h1 {
-    font-size: 60px;
+    font-size: 45px;
     color: rgb(253, 234, 229);
     font-family: 'Playfair Display', serif;
     text-align: center;
@@ -99,92 +111,128 @@ nav {
 }
 
 a:link {
-    color: #5E2BFF;
-    
+    color: #5E2BFF;    
 }
+
+/************************TITULO SECCIONES **********************/
+.tituloseccion {
+display: flex;
+flex-direction: row;
+justify-content: center;
+text-align: center;
+padding-top: 15vh;
+font-family:"Playfair Display";
+}
+
    
 /***********************SECCION 1: MISION **********************/
-.Mision {
-        padding: 40px;
-        background-color: rgb(253, 234, 229);
-    }
+#Mision {
+    background-color: #5E2BFF;
+    height: 100vh;
+    width: 100%;
+}
+
+#Mision h2 {
+    padding: 20px;
+}
    
 /************************SECCION 2: HISTORIA********************/
-.Historia {
-    
+#Historia {
+background-color: rgb(253, 234, 229);
+height: 100vh;
 float: left;
 display: flex;
 justify-content: center;
 align-items: center;
+}
 
-    }
-.Historia, h2, h3{
+#Historia, h2, h3{
     display: flex;
     justify-content: center;
+    padding: 20px;
+    text-align: center;
     
 }
-    aside {
+aside {
     float: right;
     width: 20%;
     background-color: #EB4833;
     padding: 10% 5%;
     ;
 }
-/**********************SECCION 3: PROYECTOS*********************/
-.Proyectos {
+/************************************SECCION 3: PROYECTOS*****************************/
+#Proyectos {
+    background-color: rgb(253, 234, 229);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
 }
-.grid-container-proyectos {
-    display: grid;
-    justify-content: space-around;
-    border: black solid 1px;
-}
-.grid-item-Proyecto1 {
-}
-.grid-item-Proyecto2 {
-}
-.grid-item-Proyecto3 {
+    .grid-container-proyectos {
+        display: grid;
+        grid-template-rows: repeat (3, 50vh);
+        column-gap: 50px;
+        /*grid-template-rows: repeat(auto-fill, minmax(min(100%,25rem),1fr));*/
+    }
+    #grid-item-Proyecto1, #grid-item-Proyecto2, #grid-item-Proyecto3 {
+
+        /*float: right;
+        height: 40%;
+        width: 30%;
+        padding: 1rem;
+        margin: 5vh 5vh;*/
+
+    }
+    .grid-item-Proyecto1 {
+        background-color: blue;
+     }
+    .grid-item-Proyecto2 {
+        background-color: yellow;
+    }
+    .grid-item-Proyecto3 {
+        background-color: green;
+    }
+
+.img_proy {
 
 }
-   
 /*******************SECCION 4: MIEMBROS*************************/
 
-.Miembros {
-    background-color: #ED5945;
+#Miembros {
+    background-color: rgb(253, 234, 229);
+    width: 100%;
+    height: 100vh;
 }
 
 .grid-container-miembros {
     display: grid;
+    grid-template-rows: 1fr;
     justify-content: space-around;
-    column-gap: 10px;
+    row-gap: 10px;
     border: black solid 2px;
 }
 
     .grid-item-maria1 {
-        grid-column-start: 1;
+        grid-row-start: 1;
         background-color: yellow;
         padding: 10px;
         border: 5px solid whitesmoke;
     }
 
     .grid-item-laura2 {
-        grid-column-start: 2;
+        grid-row-start: 2;
         background-color: green;
         padding: 10px;
         border: 5px solid  whitesmoke;
     }
 
     .grid-item-marielle3 {
-        grid-column-start: 3;
+        grid-row-start: 3;
         background-color: blue;
         padding: 10px;
         border: 5px solid  whitesmoke;
     }
 
 /*****************FOOTER: TRABAJA CON NOSOTRAS*******************/
-footer {
-    background-color: blueviolet;
-}
 
-.trabaja {
-    background-color: yellow;
-}
+/**********************RESPONSIVE******************************/

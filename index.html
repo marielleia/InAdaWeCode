@@ -11,36 +11,37 @@
  
 <body>
 <!---------------------------------ENCABEZADO-------------------------------------------->
-    <nav>
-        <section class= "logo">
-            <img scr="Foto" alt="logo">
-        </section>
-        <section class="contenedorlista">                
-            <ul>
-                <li><a href="#mvv">In Ada We Code</a></li>                                
-                <li><a href="#Historia">Historia</a></li>
-                <li><a href="#Proyectos">Proyectos</a></li>
-                <li><a href="#Miembros">Miembros</a></li>
-                <li><a href="#Trabaja">Trabaja con nosotras</a></li>
-            </ul>
-        </section>
-    </nav>
+<nav>
+    <section class= "logo">
+        <img scr="Foto" alt="logo">
+    </section>
+    <section class="contenedorlista">                
+        <ul>
+            <li><a href="#Portada">Inicio</a></li>
+            <li><a href="#Mision">Misión</a></li>                                
+            <li><a href="#Historia">Historia</a></li>
+            <li><a href="#Proyectos">Proyectos</a></li>
+            <li><a href="#Miembros">Miembros</a></li>
+            <li><a href="#Trabaja">Contacto</a></li>
+        </ul>
+    </section>
+</nav>
 
 <!----------------------------------------PORTADA---------------------------------------->
 <main>
-    <section class="portada">
-        <img id="fondo" src="https://cdn.pixabay.com/photo/2017/12/18/13/59/create-3026190_960_720.jpg" alt="Fondo">
-            <div class="maintext">
-                <div class="text1"><h1>IN ADA WE &lt; CODE &gt; </h1></div>
-                <div class="text2"><h3><em>"we make your dreams happen"</em></h3></div>
-            </div>  
-        </section>
+<section id="Portada">
+    <img id="fondo" src="https://cdn.pixabay.com/photo/2017/12/18/13/59/create-3026190_960_720.jpg" alt="Fondo">
+        <div class="maintext">
+            <div class="text1"><h1>IN ADA WE &lt; CODE &gt; </h1></div>
+            <div class="text2"><h3><em>"we make your dreams happen"</em></h3></div>
+        </div>  
+    </section>
 </main>
 
 <!-----------------------------------SECCION 1: MISION------------------------------------->
-    <section class="Mision">
-        <div id="mvv">
-            <h2>MISIÓN, VISIÓN Y VALORES</h2>
+    <section id="Mision">
+        <div class="tituloseccion">
+            <h2>NUESTRA MISIÓN, VISIÓN Y VALORES</h2>
         </div>
         <h3>texto sobre mision aqui</h3>
         <ul>
@@ -52,9 +53,9 @@
     </section>    
  
 <!-----------------------------------SECCION 2: HISTORIA------------------------------------->
-<section class="Historia">
-    <div id="Historia">
-        <h2>NUESTRA HISTORIA</h2>
+<section id="Historia">
+    <div class="tituloseccion">
+        <h2>NUESTRA HISTORIA</h2></div>
         <h3>"welcome to the new code era"</h3>
         <p>Somos un grupo multicultural de tres mujeres perseverantes unidas por un bootcamp de Factoría F5 inspiradas por la valentía y la gran curiosidad de Ada Lovelace, que fue la primera mujer programadora conocida mundialmente,
              en busca de nuevos retos.</p> </div>
@@ -62,55 +63,74 @@
 </section>
 
 <!-----------------------------------SECCION 3: PROYECTOS------------------------------------->
-<section class="Proyectos">
-    <div id="Proyectos">
-    <h2>NUESTROS PROYECTOS</h2>
-        <div class="grid-container-proyectos"></div>
+<section id="Proyectos">
+    <div class="tituloseccion">
+        <h2>NUESTROS PROYECTOS</h2></div>
+
         <div class="grid-item-Proyecto1">
-            <h3>Proyecto 1: Google Log In</h3>
-            <img src="Foto" alt="ProyectoGoogle">
+            <h3 class="proy_tit">Proyecto 1: Google Log In</h3>
+        <div class="grid-container-proyectos">
+            <img src="gogle" alt="ProyectoGoogle" class="img_proy">
         </div>
+
         <div class="grid-item-Proyecto2">
-            <h3>Proyecto 2: Spotify Landing Page</h3>
-            <img src="Foto" alt="ProyectoSpotify">
+            <h3 class="proy_tit">Proyecto 2: Spotify Landing Page</h3>
+        <div class="grid-container-proyectos">
+            <img src="spo" alt="ProyectoSpotify" class="img_proy">
         </div>
+
         <div class="grid-item-Proyecto3">
-            <h3>Proyecto 3: Tribute to Ada Lovelace</h3>
-            <img src="Foto" alt="ProyectoTribute">
+            <h3 class="proy_tit">Proyecto 3: Tribute to Ada Lovelace</h3>
+        <div class="grid-container-proyectos">
+            <img src="fotoadaa" alt="ProyectoTribute" class="img_proy">
+        </div>
     </div>
     </div>
 </section>
+
+<!--google-login.png, https://www.scdn.co/i/_global/twitter_card-default.jpg-->
 
 <!-----------------------------------SECCION 4: MIEMBROS------------------------------------->
-<section class="Miembros">
-<div id="Miembros">
-    <h2>LAS PARTICIPANTES DEL GRUPO</h2>
+<section id="Miembros">
+    <div class="tituloseccion">
+    <h2>LAS PARTICIPANTES DEL GRUPO</h2></div>
+
     <div class="grid-container-miembros">
+
         <div class="grid-item-maria1">
-            <img src="Foto" alt="FotoMaria">
-            <h3>Maria Carranza</h3><br>
-            <p>Descripción</p></div>
+            <figure class="picture_maria">
+            <img src="foto" alt="FotoMaria"></figure>
+            <div class="mariatext">
+                <h3 class="itemtitle">Maria Carranza</h3>
+            <p>Full Stack Developer</p>
+            </div>
+
         <div class="grid-item-laura2">
-            <img src="Foto" alt="FotoLaura">
-            <h3>Laura Calderin</h3><br>
-            <p>Descripción</p></div>
+            <figure class="picture_laura">
+            <img src="foto" alt="FotoLaura"></figure>
+            <div class="lauratext"></div>
+            <h3 class="itemtitle"></h3>Laura Calderin</h3>
+            <p>Full Stack Developer</p></div>
+
         <div class="grid-item-marielle3">
-            <img src="Foto" alt="FotoMarielle">
-            <h3>Marielle Ibias</h3><br>
-            <p>Descripción</p></div>
-    </div>
-</div>
+            <figure class="picture_marielle">
+            <img srcset="Foto" alt="FotoMarielle"></figure>
+            <div class="marielletext"></div>
+            <h3 class="itemtitle">Marielle Ibias</h3>
+            <p>Full Stack Developer</p></div>
+        </div>
 
 </section>
-
+</body>
 <!-----------------------------------FOOTER: CONTACTA/TRABAJA------------------------------------>
 <footer>
-    <section class="Trabaja">
-        <div id="Trabaja">
-                <h2>TRABAJA CON NOSOTRAS</h2>
-            <div>"Formulario"</div>
+    <section id="Trabaja">
+        <div class="tituloseccion">
+            <h2>TRABAJA CON NOSOTRAS</h2>
         </div>
+        <div>"Formulario"</div>
+
     </section>
 </footer>
-</body>
+
 </html>
