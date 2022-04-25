@@ -26,15 +26,12 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
     left: 0;
     top: 0;
     width: 100%;
-    background-color: rgb(253, 234, 229);
-}
+    background-color: inherit;
 
-.logo {
-    position: left;
 }
 
 .contenedorlista {
@@ -43,13 +40,12 @@ nav {
     justify-content: space-between;
     align-content: center;
     color: #5E2BFF;
-    overflow: hidden;
     padding: 20px 15px;
 }
 
 .contenedorlista a {
-    float: left;
-    display: block;
+   
+    display: inline-block;
     text-decoration: none;
     font-size: 14px;
     line-height: 15px;
