@@ -18,7 +18,7 @@ body {
     flex-direction: column;
     font-size: 1em;
     line-height: 1.5em;
-    margin: 3px;
+    margin: 1px;
 }
 /******************* ENCABEZADO *****************************/
 nav {
@@ -117,10 +117,10 @@ a:link {
 
 /************************TITULO SECCIONES **********************/
 .tituloseccion {
-padding-top: 100px;
-display: flex;
-justify-content: center;
+padding-top: 15%;
+
 text-align: center;
+font-size: xx-large;
 }
    
 /***********************SECCION 1: MISION **********************/
@@ -128,36 +128,42 @@ text-align: center;
     height: 100vh;
     width: 100%;
     display: flex;
-    padding: 40px;
+    flex-direction: row;
     background-color: rgb(253, 234, 229);
-  
+
+
 } 
-.title {
-font-size: 20px;
-color: red;
+.mvp h2 {
+  
+    color: #071108;
+    padding-bottom: 10px;
+  
+    width: 100%;
 }
 
+
 #woman {
-    justify-content: center;
-    width: 60%;
+    width: 70%;
     height:60%;
 }
 
 .container-paragraph{
+
 font-size: 20px;
-text-align: justify;
-text-decoration: #5E2BFF;
+text-align: center;
 width:60%;
 height:40%;
+padding-top: 15%;
 }
+
 
    
 /************************SECCION 2: HISTORIA********************/
 #Historia {
     height: 100vh;
     width: 100%;
-background-color: rgb(253, 234, 229);
-margin-top: 30%;
+    background-color: rgb(253, 234, 229);
+    margin-top: 30%;
 
  }
 .contenido-historia {
@@ -166,9 +172,13 @@ margin-top: 30%;
 }    
 .historia-texto{ 
     text-align: center;
-    margin-top: 5%;    
+    margin-top: 5%;  
+ }   
+.historia-texto h3 {
+    font-size: x-large;
+}    
 
-}
+
 
 aside {
    background-color: #EB4833;
