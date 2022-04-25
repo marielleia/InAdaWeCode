@@ -99,39 +99,60 @@ a:link {
 }
    
 /***********************SECCION 1: MISION **********************/
-.Mision {
-        padding: 40px;
-        background-color: rgb(253, 234, 229);
-    }
-   
-    .ima {
-        
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 20px;
-        position: relative;
-
-    }
-
-.paragraph h3{
-      font-size: 20px;
-      font-family:monospace;
-      text-align: justify;
-      text-decoration: #5E2BFF;
-      
-      
+.mision {
+    display: flex;
+    padding: 40px;
+    background-color: rgb(253, 234, 229);
+  
+} 
+.title {
+font-size: 20px;
+color: red;
 }
 
+#woman {
+
+    justify-content: center;
+    width: 60%;
+    height:60%;
+   
+}
+
+.container-paragraph{
+
+
+font-size: 20px;
+font-family:gramanode;
+text-align: justify;
+text-decoration: #5E2BFF;
+witdht:40%;
+height:40%;
+}
 
     
 
    
 /************************SECCION 2: HISTORIA********************/
 .Historia {
-        background-color: green;
+    
+float: left;
+display: flex;
+justify-content: center;
+align-items: center;
+
     }
-   
+.Historia, h2, h3{
+    display: flex;
+    justify-content: center;
+    
+}
+    aside {
+    float: right;
+    width: 20%;
+    background-color: #EB4833;
+    padding: 10% 5%;
+    ;
+}
 /**********************SECCION 3: PROYECTOS*********************/
 .Proyectos {
 }
@@ -174,6 +195,25 @@ a:link {
         padding: 10px;
         border: 5px solid  whitesmoke;
     }
+
+.img laura foto {
+    grid-column-start: 2;
+    justify-content: center;
+    width: 10%;
+    height: 10px;
+    position: relative;
+    align-center;
+}
+
+
+
+.p {
+    grid-column-start: 2;
+    justify-content:left;
+    font-family:monospace;
+    grid.line:normal;
+    content-position:left;
+}
 
     .grid-item-marielle3 {
         grid-column-start: 3;
