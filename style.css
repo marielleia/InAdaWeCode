@@ -23,13 +23,12 @@ body {
    
 /******************* ENCABEZADO *****************************/
 nav {
-     
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     position: fixed;
     left: 0;
-    top:0;
+    top: 0;
     width: 100%;
     background-color: rgb(253, 234, 229);
 }
@@ -84,7 +83,6 @@ nav {
     width: auto;
     max-width: 100%;
     height: 100vh;
-
 }
 
 #Portada .maintext {
