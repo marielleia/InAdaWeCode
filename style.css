@@ -7,6 +7,7 @@
  
 html {
  scroll-behavior: smooth;
+ height: 100%;
 }
 
 body {
@@ -20,21 +21,22 @@ body {
     padding-top: 80px;
     margin: 3px;
 }
-   
 /******************* ENCABEZADO *****************************/
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
     left: 0;
     top: 0;
     width: 100%;
-    background-color: rgb(253, 234, 229);
+    background-color: inherit;
+    z-index: 999;
+    
 }
 
 .logo {
-    position: left;
+    width: 50%;
 }
 
 .contenedorlista {
@@ -43,13 +45,12 @@ nav {
     justify-content: space-between;
     align-content: center;
     color: #5E2BFF;
-    overflow: hidden;
     padding: 20px 15px;
 }
 
 .contenedorlista a {
-    float: left;
-    display: block;
+   
+    display: inline-block;
     text-decoration: none;
     font-size: 14px;
     line-height: 15px;
@@ -71,35 +72,47 @@ nav {
 
  /************************** PORTADA ************************/
  #Portada {
-    background-color: yellow;
-   /* position: relative;*/
-    max-width: 100%;
-    max-height: 100vh;
-    margin: 0 auto;
+     height: 100vh;
+     width: 100%;
+}
+ .hero-image {
+    background-image: url("create-bg.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
-#Portada img {
-    vertical-align: middle;
-    width: auto;
-    max-width: 100%;
-    height: 100vh;
+.hero-text {
+margin: 0 auto;
+height: 30%;
+width: 100%;
+background: rgb(0, 0, 0); /* Fallback color */
+background: rgba(0, 0, 0, 0.8); /* Black background with 0.5 opacity */
+color: #f1f1f1;
 }
 
-#Portada .maintext {
+
+/*#Portada .maintext {
     position: absolute;
     bottom: 0;
     background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    color: #f1f1f1;
+    /*background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    /*color: #f1f1f1;
     width: 100%;
     padding: 20px;
-}
+}*/
 
 .text1 h1 {
     font-size: 45px;
     color: rgb(253, 234, 229);
     font-family: 'Playfair Display', serif;
     text-align: center;
+    margin:  5vh;
 }
         
 .text2 h3 {
@@ -107,6 +120,7 @@ nav {
     font-family: 'Roboto Mono', monospace;
     color:#ED5945;
     text-align: center;
+    margin: 10vh;
 }
 
 a:link {
@@ -116,8 +130,7 @@ a:link {
 /************************TITULO SECCIONES **********************/
 .tituloseccion h2 {
 text-align: center;
-margin: 20%;
-padding: 20%;
+
 }
    
 /***********************SECCION 1: MISION **********************/
@@ -155,8 +168,8 @@ height:40%;
 /************************SECCION 2: HISTORIA********************/
 #Historia {
 background-color: rgb(253, 234, 229);
-height: 100vh;
-
+/*height: 100vh;*/
+margin-top: 5%;
 
  }
 .contenido-historia {
