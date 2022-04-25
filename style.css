@@ -114,16 +114,11 @@ a:link {
 }
 
 /************************TITULO SECCIONES **********************/
-.tituloseccion {
-display: flex;
-flex-direction: row;
-justify-content: center;
+.tituloseccion h2 {
 text-align: center;
-padding-top: 10vh;
-font-family:"Playfair Display";
-font-size: 20px;
+margin: 20%;
+padding: 20%;
 }
-
    
 /***********************SECCION 1: MISION **********************/
 #Mision {
@@ -283,6 +278,4 @@ float: left;
 .flip-card-back-laura, 
 .flip-card-back-marielle {
     background-color: whitesmoke;
-    transform: rotateY(180deg);
-
-/*********************** RESPONSIVE *******************/
+}
