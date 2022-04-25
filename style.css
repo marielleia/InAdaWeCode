@@ -18,11 +18,12 @@ body {
     font-size: 1em;
     line-height: 1.5em;
     padding-top: 80px;
+    margin: 3px;
 }
    
 /******************* ENCABEZADO *****************************/
 nav {
-    overflow: hidden;
+     
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -72,7 +73,7 @@ nav {
  /************************** PORTADA ************************/
  #Portada {
     background-color: yellow;
-    position: relative;
+   /* position: relative;*/
     max-width: 100%;
     max-height: 100vh;
     margin: 0 auto;
@@ -80,9 +81,10 @@ nav {
 
 #Portada img {
     vertical-align: middle;
-    width: 100%;
+    width: auto;
     max-width: 100%;
     height: 100vh;
+
 }
 
 #Portada .maintext {
@@ -140,23 +142,32 @@ font-size: 20px;
 #Historia {
 background-color: rgb(253, 234, 229);
 height: 100vh;
-float: left;
+
+
  }
-    
-.Historia, h2, h3, p { 
+.contenido-historia {
     display: flex;
-    justify-content: center;
-    text-align-last: center;
+
+}    
+.historia-texto{ 
+    text-align: center;
+    margin-top: 5%;    
+    background-color: green;
+
 }
 
-    aside {
-    float: right;
-    width: 35%;
-    background-color: #EB4833;
-    margin-top: 3%;
-    
-    
+
+aside {
+   
+   background-color: #EB4833;
+    margin-top: 5%;
+    width: 30%;
+     
 }
+
+
+
+
 /************************************SECCION 3: PROYECTOS*****************************/
 #Proyectos {
     width: 100%;
