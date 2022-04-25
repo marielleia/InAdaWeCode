@@ -18,7 +18,6 @@ body {
     flex-direction: column;
     font-size: 1em;
     line-height: 1.5em;
-    padding-top: 80px;
     margin: 3px;
 }
 /******************* ENCABEZADO *****************************/
@@ -32,7 +31,6 @@ nav {
     width: 100%;
     background-color: inherit;
     z-index: 999;
-    
 }
 
 .logo {
@@ -55,7 +53,8 @@ nav {
     font-size: 14px;
     line-height: 15px;
     border-radius: 4px;
-    padding: 5px;
+    padding: 10px;
+    gap: 5px;
 }
 
 .contenedorlista ul {
@@ -96,19 +95,8 @@ background: rgba(0, 0, 0, 0.8); /* Black background with 0.5 opacity */
 color: #f1f1f1;
 }
 
-
-/*#Portada .maintext {
-    position: absolute;
-    bottom: 0;
-    background: rgb(0, 0, 0); /* Fallback color */
-    /*background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    /*color: #f1f1f1;
-    width: 100%;
-    padding: 20px;
-}*/
-
 .text1 h1 {
-    font-size: 45px;
+    font-size: 6vh;
     color: rgb(253, 234, 229);
     font-family: 'Playfair Display', serif;
     text-align: center;
@@ -116,11 +104,11 @@ color: #f1f1f1;
 }
         
 .text2 h3 {
-    font-size: 18px;
+    font-size: 3vh;
     font-family: 'Roboto Mono', monospace;
     color:#ED5945;
     text-align: center;
-    margin: 10vh;
+    margin: 2vh;
 }
 
 a:link {
@@ -128,13 +116,17 @@ a:link {
 }
 
 /************************TITULO SECCIONES **********************/
-.tituloseccion h2 {
+.tituloseccion {
+padding-top: 100px;
+display: flex;
+justify-content: center;
 text-align: center;
-
 }
    
 /***********************SECCION 1: MISION **********************/
 #Mision {
+    height: 100vh;
+    width: 100%;
     display: flex;
     padding: 40px;
     background-color: rgb(253, 234, 229);
@@ -146,16 +138,12 @@ color: red;
 }
 
 #woman {
-
     justify-content: center;
     width: 60%;
     height:60%;
-   
 }
 
 .container-paragraph{
-
-
 font-size: 20px;
 text-align: justify;
 text-decoration: #5E2BFF;
@@ -166,9 +154,10 @@ height:40%;
    
 /************************SECCION 2: HISTORIA********************/
 #Historia {
+    height: 100vh;
+    width: 100%;
 background-color: rgb(253, 234, 229);
-/*height: 100vh;*/
-margin-top: 5%;
+margin-top: 30%;
 
  }
 .contenido-historia {
@@ -178,56 +167,37 @@ margin-top: 5%;
 .historia-texto{ 
     text-align: center;
     margin-top: 5%;    
-    background-color: green;
 
 }
 
-
 aside {
-   
    background-color: #EB4833;
     margin-top: 5%;
     width: 30%;
-     
 }
-
-
-
 
 /************************************SECCION 3: PROYECTOS*****************************/
 #Proyectos {
-    width: 100%;
     height: 100vh;
+    width: 100%;
     background-color: rgb(253, 234, 229);
     display: flex;
     flex-direction: column;
 
 }
     .grid-container-proyectos {
-        width: 100%;
-        height: 50%;
         display: grid;
         grid-template-rows: 50vh;
-        grid-template-columns: repeat(3, 50vh);
-        justify-content: space-evenly;
-        row-gap: 5px;
-        margin-top: 10vh;
+        grid-template-columns: repeat(auto-fit, 400px);
+        justify-content: center;
+        grid-gap: 20px;
+        align-items: start;
     }
 
     .grid-item-Proyecto1, .grid-item-Proyecto2, .grid-item-Proyecto3 {
     padding: 10px;
     border: 5px solid whitesmoke;
     text-align: center;
-    }
-
-    .grid-item-Proyecto1 {
-        grid-column-start: 1;
-    }
-    .grid-item-Proyecto2 {
-        grid-column-start: 2;
-    }  
-    .grid-item-Proyecto3 {
-        grid-column-start: 3;
     }
 
     img .grid-container-proyectos {
@@ -238,9 +208,11 @@ aside {
 /*******************SECCION 4: MIEMBROS*************************/
 
 #Miembros {
+    height: 100vh;
+    width: 100%;
+    margin-top: 30%;
     background-color: rgb(253, 234, 229);
     width: 100%;
-    height: auto;
 }
 
 .grid-container-miembros {
@@ -261,7 +233,7 @@ aside {
     grid-row-start: 3;
 }
 
-/********************* card flip animation effect*/
+/********************* card flip animation effect***************/
 
 .grid-item-maria-cont1, 
 .grid-item-laura-cont1, 
@@ -271,9 +243,6 @@ aside {
     height: 45vh;
     background: rgb(253, 234, 229);
     text-align: center;
-    /*perspective: 1000px;
-    border: 5px solid  whitesmoke;
-    */
 }
 
 .grid-item-maria-card, 
@@ -285,7 +254,6 @@ aside {
     text-align: center;
     transition: all 0.5 ease;
     transform-style: preserve-3d;
-   /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);*/
 }
 
 .grid-item-maria-card:hover, 
