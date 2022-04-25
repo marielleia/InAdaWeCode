@@ -232,12 +232,12 @@ aside {
 .grid-item-maria-card1, 
 .grid-item-laura-card2, 
 .grid-item-marielle-card3 {
-    background: color #ed594566;
-    width: 320px;
-    height: 400px;
+    background: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
     border: 5px solid  whitesmoke;
     text-align: center;
-    perspective: 1000px;
 }
 
 .grid-item-maria-card-inner, 
@@ -247,8 +247,9 @@ aside {
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 0.8s;
+    transition: transform 1s;
     transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
 }
 
 .grid-item-maria-card1:hover, 
@@ -270,19 +271,21 @@ aside {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 /*delante*/
 .flip-card-front-maria,
 .flip-card-front-laura,
 .flip-card-front-marielle {
-    background-color: #EB4833;
+    background-color: #bbb;
 }
 
 /*detras*/
 .flip-card-back-maria,
 .flip-card-back-laura, 
 .flip-card-back-marielle {
-    background-color: #5E2BFF;
-}
-/*********************** RESPONSIVE ********************/
+    background-color: whitesmoke;
+    transform: rotateY(180deg);
+
+/*********************** RESPONSIVE *******************/
