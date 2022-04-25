@@ -31,11 +31,11 @@ nav {
     top: 0;
     width: 100%;
     background-color: inherit;
+    z-index: 999;
     
 }
 
 .logo {
-    position: left;
     width: 50%;
 }
 
@@ -82,20 +82,15 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .hero-text {
-text-align: center;
-position: absolute;
 margin: 0 auto;
-max-height: 100vh;
 height: 30%;
 width: 100%;
-line-height: 50vh;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-bottom: 0;
 background: rgb(0, 0, 0); /* Fallback color */
 background: rgba(0, 0, 0, 0.8); /* Black background with 0.5 opacity */
 color: #f1f1f1;
@@ -135,8 +130,7 @@ a:link {
 /************************TITULO SECCIONES **********************/
 .tituloseccion h2 {
 text-align: center;
-margin: 20%;
-padding: 20%;
+
 }
    
 /***********************SECCION 1: MISION **********************/
@@ -153,8 +147,8 @@ padding: 20%;
 /************************SECCION 2: HISTORIA********************/
 #Historia {
 background-color: rgb(253, 234, 229);
-height: 100vh;
-
+/*height: 100vh;*/
+margin-top: 5%;
 
  }
 .contenido-historia {
