@@ -122,7 +122,7 @@ flex-direction: flex-end;
 justify-content: center;
 text-align: center;
 font-size: xx-large;
-padding-top: 15%;
+padding-top: 10%;
 margin-bottom: 5%;
 }
    
@@ -191,7 +191,6 @@ aside {
 
 /************************************SECCION 3: PROYECTOS*****************************/
 #Proyectos {
-    height: 100vh;
     width: 100%;
     background-color: rgb(253, 234, 229);
     display: flex;
@@ -206,43 +205,32 @@ aside {
         align-items: center;
     }
 
-    .grid-item-Proyecto1, .grid-item-Proyecto2, .grid-item-Proyecto3 {
+.grid-item-Proyecto1, .grid-item-Proyecto2, .grid-item-Proyecto3 {
     padding: 10px;
     border: 5px solid whitesmoke;
     text-align: center;
-    }
+}
 
-    img .grid-container-proyectos {
+img .grid-container-proyectos {
     width: 16em;
     height: 16em;
-    }
+}
  
 /*******************SECCION 4: MIEMBROS*************************/
 
 #Miembros {
-    height: 100vh;
     width: 100%;
     margin-top: 30%;
     background-color: rgb(253, 234, 229);
-    width: 100%;
 }
 
 .grid-container-miembros {
     display: grid;
-    grid-template-columns: 50vh;
-    grid-template-rows: repeat(3, 50vh);
-    justify-content: space-around;
-    column-gap: 15px;
-    margin-top: 10vh;
-}
-.grid-item-maria-card1 {
-    grid-row-start: 1;
-}
-.grid-item-laura-card2 {
-    grid-row-start: 2;
-}
-.grid-item-marielle-card3 {
-    grid-row-start: 3;
+    grid-template-rows: 50vh;
+    grid-template-columns: repeat(auto-fit, 50vh);
+    justify-content: center;
+    grid-gap: 10px;
+    align-items: center;
 }
 
 /********************* card flip animation effect***************/
