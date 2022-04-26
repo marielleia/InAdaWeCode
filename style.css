@@ -211,6 +211,10 @@ aside {
     text-align: center;
 }
 
+.grid-item-Proyecto1:hover, .grid-item-Proyecto2:hover, .grid-item-Proyecto3:hover {
+background-color: #ED594533;
+}
+
 img .grid-container-proyectos {
     width: 16em;
     height: 16em;
