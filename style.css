@@ -122,7 +122,7 @@ flex-direction: flex-end;
 justify-content: center;
 text-align: center;
 font-size: xx-large;
-padding-top: 20%;
+padding-top: 15%;
 margin-bottom: 5%;
 }
    
@@ -151,14 +151,16 @@ margin-bottom: 5%;
     justify-content: space-between;
     color: #071108;
     font-weight: bold;
+    font-size: 95%;
 }
 
 #woman {
-height: 40vh;
-width: 46vh;
+height: 45vh;
+width: 50vh;
 display: flex;
 justify-content: center;
 align-items: center;
+padding-top: 5%;
 }
  
 /************************SECCION 2: HISTORIA********************/
@@ -290,7 +292,7 @@ aside {
 .flip-card-back-laura, 
 .flip-card-back-marielle {
 transform: rotateY(180deg);
-background-color: #5E2BFF;
+background-color: rgb(253, 234, 229);
 color: #ED5945;
 display: flex;
 align-items: center;
