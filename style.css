@@ -1,81 +1,72 @@
 /********************RESET CSS********************************/
 * {
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
     text-decoration: none;
 }
- 
+
 html {
- scroll-behavior: smooth;
- height: 100%;
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
 }
 
 body {
-    background-color:  rgb(253, 234, 229);
-    padding: 0;
-    font-family: 'Inconsolata', "Playfair Display", monospace;
-    display: flex;
-    flex-direction: column;
-    font-size: 1em;
-    line-height: 1.5em;
-    margin: 1px;
+    background-color: rgb(14, 4, 2);
+    font-family: "Inconsolata", "Playfair Display", monospace;
 }
 /******************* ENCABEZADO *****************************/
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: sticky;
-    left: 0;
-    top: 0;
+    position: fixed;
+    background-color: rgb(253, 234, 229, 0.5);
     width: 100%;
-    background-color: inherit;
-    z-index: 999;
+    height: 12vh;
+    z-index: 9;
 }
 
 .logo {
-    width: 50%;
+    width: 55%;
 }
 
-.contenedorlista {
-    width: auto;
+.container {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    color: #5E2BFF;
     padding: 20px 15px;
 }
 
-.contenedorlista a {
-   
+.container a {
     display: inline-block;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 15px;
     border-radius: 4px;
     padding: 10px;
     gap: 5px;
 }
 
-.contenedorlista ul {
+.container ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     list-style-type: none;
 }
 
-.contenedorlista a:hover {
+.container a:hover {
     background-color: #ddd;
-    color: #ED5945;
+    color: #ed5945;
 }
 
- /************************** PORTADA ************************/
- #Portada {
-     height: 100vh;
-     width: 100%;
+/************************** PORTADA ************************/
+#Portada {
+    height: 100vh;
+    width: 100%;
 }
- .hero-image {
-    background-image: url("create-bg.jpg");
+.hero-image {
+    background-image: url("images/create-bg.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -87,147 +78,162 @@ nav {
 }
 
 .hero-text {
-margin: 0 auto;
-height: 30%;
-width: 100%;
-background: rgb(0, 0, 0); /* Fallback color */
-background: rgba(0, 0, 0, 0.8); /* Black background with 0.5 opacity */
-color: #f1f1f1;
+    margin: 0 auto;
+    height: 30%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
 }
 
-.text1 h1 {
+.text1 h1, .title{
     font-size: 6vh;
     color: rgb(253, 234, 229);
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     text-align: center;
-    margin:  5vh;
+    margin: 5vh;
 }
-        
+
 .text2 h3 {
     font-size: 3vh;
-    font-family: 'Roboto Mono', monospace;
-    color:#ED5945;
+    font-family: "Roboto Mono", monospace;
+    color: #ed5945;
     text-align: center;
     margin: 2vh;
 }
 
 a:link {
-    color: #5E2BFF;    
+    color: #5e2bff;
 }
-
-/************************TITULO SECCIONES **********************/
-.tituloseccion {
-display: flex;
-flex-direction: flex-end;
-justify-content: center;
-text-align: center;
-font-size: xx-large;
-padding-top: 10%;
-margin-bottom: 5%;
-}
-   
-/***********************SECCION 1: MISION **********************/
-#Mision {
+/*-------------------- SECTION- VIEWS---------------------------------*/
+.view {
     height: 100vh;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: rgb(253, 234, 229);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
-.contenido-mision {
+#Mision{
+    background-image: url("https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557396_960_720.jpg");
+}
+#Historia{
+    background-image: url("https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557399_960_720.jpg");
+}
+#Proyectos{
+    background-image: url("https://cdn.pixabay.com/photo/2015/09/05/20/02/coding-924920_960_720.jpg");
+}
+#Miembros{
+    background-image: url("https://cdn.pixabay.com/photo/2019/06/25/04/40/light-bulb-4297386__340.jpg");
+}
+
+.container-mision, .container-historia, .container-proyectos, .container-miembros{
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgba(0, 0, 0, 0.8); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+}
+
+/***********************SECCION 1: MISION **********************/
+
+.mision-vision-valores {
+    width: 80vw;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 5vh;
 }
 
-.container-paragraph{
-    width: 50%;
-    height: 50%;
+h4, p, li{
+    text-align: center;
+    font-size: x-large;
+}
+#mision,
+#vision,
+#valores {
+    width: 30vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    color: #071108;
-    font-weight: bold;
-    font-size: 95%;
-}
-
-#woman {
-height: 45vh;
-width: 50vh;
-display: flex;
-justify-content: center;
-align-items: center;
-padding-top: 5%;
-}
- 
-/************************SECCION 2: HISTORIA********************/
-#Historia {
-    height: 100vh;
-    width: 100%;
-    background-color: rgb(253, 234, 229);
-    margin-top: 30%;
-
- }
-.contenido-historia {
-    display: flex;
-
-}    
-.historia-texto{ 
+    align-items: center;
     text-align: center;
-    margin-top: 5%;  
- }   
-.historia-texto h3 {
-    font-size: x-large;
-}    
+    gap: 5px;
+    padding: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+/************************SECCION 2: HISTORIA********************/
+
+.container-text-h{
+    display: flex;
+    flex-direction: row;
+}
+.historia-text,
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.historia-text {
+    font-size: 24px;
+    width: 50vw;
+}
 
 aside {
-   background-color: #EB4833;
-    margin-top: 5%;
-    width: 30%;
+    width: 40vw;
 }
 
 /************************************SECCION 3: PROYECTOS*****************************/
-#Proyectos {
-    width: 100%;
-    background-color: rgb(253, 234, 229);
+
+
+.grid-container-proyectos{
+    height: 50vh;
+    width: 80vw;
+    display: grid;
+    grid-template-rows: 50vh;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.grid-item-Proyecto1,
+.grid-item-Proyecto2,
+.grid-item-Proyecto3 {
     display: flex;
     flex-direction: column;
-}
-    .grid-container-proyectos {
-        display: grid;
-        grid-template-rows: 50vh;
-        grid-template-columns: repeat(auto-fit, 300px);
-        justify-content: center;
-        grid-gap: 10px;
-        align-items: center;
-    }
-
-.grid-item-Proyecto1, .grid-item-Proyecto2, .grid-item-Proyecto3 {
-    padding: 10px;
-    border: 5px solid whitesmoke;
+    align-items: center;
     text-align: center;
+    justify-content: space-evenly;
 }
 
-.grid-item-Proyecto1:hover, .grid-item-Proyecto2:hover, .grid-item-Proyecto3:hover {
-background-color: #ED594533;
+.grid-item-Proyecto1:hover,
+.grid-item-Proyecto2:hover,
+.grid-item-Proyecto3:hover {
+    background-color: hwb(300 12% 85% / 0.8);;
+    border-radius: 20px;
 }
 
-img .grid-container-proyectos {
-    width: 16em;
-    height: 16em;
+#proj {
+    width: 10em;
+    height: 10em;
+    border-radius: 20px;
 }
- 
+
+
 /*******************SECCION 4: MIEMBROS*************************/
 
-#Miembros {
-    width: 100%;
-    background-color: rgb(253, 234, 229);
-}
-
-.grid-container-miembros {
+.grid-container-miembros{
+    height: 50vh;
+    width: 80vw;
     display: grid;
     grid-template-rows: 50vh;
     grid-template-columns: repeat(auto-fit, 50vh);
@@ -238,19 +244,19 @@ img .grid-container-proyectos {
 
 /********************* card flip animation effect***************/
 
-.grid-item-maria-cont1, 
-.grid-item-laura-cont1, 
+.grid-item-maria-cont1,
+.grid-item-laura-cont1,
 .grid-item-marielle-cont1 {
     position: relative;
     width: 45vh;
     height: 45vh;
-    background: rgb(253, 234, 229);
+    background-color:transparent;
     text-align: center;
 }
 
-.grid-item-maria-card, 
-.grid-item-laura-card, 
-.grid-item-marielle-card{
+.grid-item-maria-card,
+.grid-item-laura-card,
+.grid-item-marielle-card {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -259,33 +265,40 @@ img .grid-container-proyectos {
     transform-style: preserve-3d;
 }
 
-.grid-item-maria-card:hover, 
-.grid-item-laura-card:hover, 
-.grid-item-marielle-card:hover{
+.grid-item-maria-card:hover,
+.grid-item-laura-card:hover,
+.grid-item-marielle-card:hover {
     transform: rotateY(180deg);
 }
 /*front*/
-.flip-card-front-maria, 
-.flip-card-front-laura, 
+.flip-card-front-maria,
+.flip-card-front-laura,
 .flip-card-front-marielle,
-.flip-card-back-maria, 
-.flip-card-back-laura, 
+.flip-card-back-maria,
+.flip-card-back-laura,
 .flip-card-back-marielle {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    background-color: rgb(253, 234, 229);
+    color: aliceblue;
 }
 
 /*detras*/
 .flip-card-back-maria,
-.flip-card-back-laura, 
+.flip-card-back-laura,
 .flip-card-back-marielle {
-transform: rotateY(180deg);
-background-color: rgb(253, 234, 229);
-color: #ED5945;
-display: flex;
-align-items: center;
-justify-content: center;
+    transform: rotateY(180deg);
+    background-color: transparent;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#carnet{
+    border-radius: 50%;
+}
+.itemtitle{
+    font-size: x-large;
 }
